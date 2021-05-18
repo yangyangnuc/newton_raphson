@@ -9,6 +9,8 @@
 /home/mark/newton_raphson/src/newton_raphson_class.hpp
 iostream
 -
+cmath
+-
 
 /home/mark/newton_raphson/src/wrapper.cpp
 iostream

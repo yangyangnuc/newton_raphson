@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <cmath>
 
 
 
@@ -24,21 +24,27 @@ class Newton_raphson
         Newton_raphson(double eps, unsigned long  max_iter) : eps_(0.001), max_iter_(10000), iter_time_(0)
         {
             double tmp = 0.0;
-            double N = 7;
-            double x = N/2.;
+            double input_value = 7;
+            double target_value = input_value/2.;
+
+            eps_ = eps;
+            max_iter_ = max_iter;
+
+            iter_time_ = 0;
 
             std:: cout << "max iter " << max_iter_ <<", eps set " << eps_ <<"\n";
             while ( iter_time_ < max_iter_)
             {
-                tmp = x / 2. + N / (2. * x);
+                tmp = target_value / 2. + input_value / (2. * target_value);
 
-                if (abs(tmp - x) < eps)
+
+                if (fabs(tmp - target_value) < eps_)
                 {
-                    std::cout << "eps done  iter_time_ " << iter_time_ << "\n";
+                    std::cout << "eps done  iter_time_ " << iter_time_ << ", tmp " <<tmp << " target_value " << target_value << ", eps_ " << eps_ << "\n";
                     break;
                 }
                     
-                x = tmp;
+                target_value = tmp;
 
                 iter_time_++;
                 
@@ -46,7 +52,7 @@ class Newton_raphson
 
             }
 
-            std:: cout << x << "," << iter_time_ << "\n";
+            std:: cout << target_value << "," << iter_time_ << "\n";
             
         } 
 
