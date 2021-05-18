@@ -35,7 +35,9 @@ class Newton_raphson
             std:: cout << "max iter " << max_iter_ <<", eps set " << eps_ <<"\n";
             while ( iter_time_ < max_iter_)
             {
-                tmp = target_value/2. + (input_value - 0)/(2. * target_value * target_value);
+                // core sentence
+                // refer to wangjinyang's math document for why it is calculated this way
+                tmp = target_value - (target_value*target_value - input_value)/(2. * target_value );
 
                 // tmp = target_value / 2. + input_value / (2. * target_value);
 
