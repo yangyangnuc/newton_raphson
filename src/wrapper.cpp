@@ -13,7 +13,7 @@
 int main(int argc, char** argv)
 {
 
-    std::shared_ptr<Newton_raphson> sptr_newton( new  Newton_raphson(0.001, 1000)  );
+    std::shared_ptr<Newton_raphson> sptr_newton( new  Newton_raphson(0.00001, 1000)  );
 
 
 
