@@ -1,0 +1,3 @@
+/home/mark/newton_raphson/CMakeFiles/rebuild_cache.dir
+/home/mark/newton_raphson/CMakeFiles/newton_raphson.dir
+/home/mark/newton_raphson/CMakeFiles/edit_cache.dir

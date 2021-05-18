@@ -7,13 +7,13 @@
 
 
 #include <iostream>
-
-
+#include "newton_raphson_class.hpp"
+#include <memory>
 
 int main(int argc, char** argv)
 {
 
-
+    std::shared_ptr<Newton_raphson> sptr_newton( new  Newton_raphson(0.001, 1000)  );
 
 
 

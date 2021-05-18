@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/newton_raphson.dir/src/wrapper.cpp.o  -o newton_raphson 

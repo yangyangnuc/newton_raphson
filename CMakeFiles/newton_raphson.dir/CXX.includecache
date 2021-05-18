@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mark/newton_raphson/src/newton_raphson_class.hpp
+iostream
+-
+
+/home/mark/newton_raphson/src/wrapper.cpp
+iostream
+-
+newton_raphson_class.hpp
+/home/mark/newton_raphson/src/newton_raphson_class.hpp
+memory
+-
+
